@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import {HashRouter, Routes, Route} from 'react-router-dom';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import MovieDetail from './components/MovieDetail/MovieDetail';
@@ -11,7 +11,7 @@ function App() {
   return (
 
   <div className="app">
-    <BrowserRouter>
+    <HashRouter>
     <Header />
     <div className="container">
      <Routes>
@@ -21,7 +21,7 @@ function App() {
      </Routes>
      </div>
      <Footer />
-     </BrowserRouter>
+     </HashRouter>
   </div>
 
   );
